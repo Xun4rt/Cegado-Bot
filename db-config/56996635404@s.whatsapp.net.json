@@ -1,0 +1,14 @@
+{
+  "prefix": [
+    "/",
+    ".",
+    "#",
+    "!",
+    "-",
+    "*",
+    "×"
+  ],
+  "mode": "public",
+  "antiPrivate": false,
+  "antiCall": false
+}
