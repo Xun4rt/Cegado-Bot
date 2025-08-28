@@ -1,39 +1,21 @@
 import { exec } from "child_process";
 
-let handler = async (m, { text }) => {
+let handler = async (m, { conn, text }) => {
+    if (!text) throw `⚠️ Escribe una descripción para la actualización.\n\nEjemplo:\n.update Fix en el sistema de reportes`;
 
-  if (!text) return m.reply("❌ Debes poner una descripción para el commit.\n\nEjemplo: `.update Arreglé los comandos de música`");
-
-  m.reply("⏳ Subiendo cambios a GitHub...");
-
-  exec(
-
-    `git config user.name "Xun4rt" && git config user.email "Xun4rt@users.noreply.github.com" && git pull origin main --no-edit && git add . && git commit -m "${text}" && git push origin main`,
-
-    (err, stdout, stderr) => {
-
-      if (err) {
-
-        m.reply("❌ Error al subir: " + stderr);
-
-        return;
-
-      }
-
-      m.reply("✅ Cambios subidos con éxito al repo *Cegado-Bot*:\n\n" + stdout);
-
-    }
-
-  );
-
+    // Ejecutar comandos en la terminal
+    exec(`git add . && git commit -m "${text}" && git push origin main`, (err, stdout, stderr) => {
+        if (err) {
+            m.reply(`❌ Error al actualizar:\n${stderr}`);
+            return;
+        }
+        m.reply(`✅ Se subieron los cambios a GitHub con el commit:\n\n"${text}"`);
+    });
 };
 
 handler.command = /^update$/i;
-
-handler.help = ["update <descripción>"];
-
-handler.tags = ["owner"];
-
-handler.owner = true;
+handler.help = ['update <descripción>'];
+handler.tags = ['owner'];
+handler.owner = true; // Solo el owner puede usarlo
 
 export default handler;
