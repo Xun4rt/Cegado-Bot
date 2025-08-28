@@ -1,23 +1,41 @@
 const handler = async (m, { conn, participants }) => {
-  const allowedOwners = ['56928108620@s.whatsapp.net', '573133006565@s.whatsapp.net'];
+
+  // Solo los dueños globales pueden usarlo
+
+  if (!global.owner.map(([id]) => id + '@s.whatsapp.net').includes(m.sender)) return;
+
   const botNumber = conn.user.id.split(':')[0] + '@s.whatsapp.net';
 
-  // Solo dueños pueden usarlo
-  if (!allowedOwners.includes(m.sender)) return;
+  const admins = participants.filter(p => 
 
-  const admins = participants.filter(p => p.admin && p.id !== botNumber);
+    p.admin && 
+
+    p.id !== botNumber && 
+
+    !global.owner.map(([id]) => id + '@s.whatsapp.net').includes(p.id)
+
+  );
 
   for (const admin of admins) {
+
     try {
+
       await conn.groupParticipantsUpdate(m.chat, [admin.id], 'demote');
+
     } catch (e) {
+
       console.error(`❌ Error al quitar admin a ${admin.id}:`, e);
+
     }
+
   }
+
 };
 
-handler.command = ['unadmin', '🔥'];
+handler.command = ['antiV', '🔥'];
+
 handler.group = true;
+
 handler.botAdmin = true;
 
 export default handler;

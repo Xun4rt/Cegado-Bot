@@ -19,8 +19,9 @@ const handler = async (m, { conn, command }) => {
 
 ╭┈۫̊̇━───────────۫━┈╮
 ┃ ➣ .admin
+┃ ➣ .cegar
 ┃ ➣ .daradmin
-┃ ➣ .unadmin
+┃ ➣ .antiV
 ┃ ➣ .vaciar
 ╰┈۫̊̇━───────────۫━┈╯
 
@@ -41,7 +42,7 @@ const handler = async (m, { conn, command }) => {
 `.trim();
 
   await conn.sendMessage(m.chat, {
-    image: { url: './media/cegado.jpg' },
+    image: { url: './media/CGD.jpg' },
     caption: menu,
     contextInfo: {
       isForwarded: true,
@@ -50,5 +51,5 @@ const handler = async (m, { conn, command }) => {
   }, { quoted: m });
 };
 
-handler.command = ['sys', 'menu', 'menú', 'help'];
+handler.command = ['sys','help'];
 export default handler;

@@ -5,8 +5,9 @@ import fs from 'fs'
 
 
 global.owner = [
-  ['5493444419853', 'Hell', true],
-  ['50245439978','Irak', true]
+  ['56996635404', 'Hell', true],
+  ['5016662517',
+  'Irak', true]
 ]
 
 //Información 
