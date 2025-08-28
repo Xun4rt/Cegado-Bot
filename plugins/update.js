@@ -8,7 +8,7 @@ let handler = async (m, { text }) => {
 
   exec(
 
-    `git config user.name "Xun4rt" && git config user.email "Xun4rt@users.noreply.github.com" && git remote set-url origin https://Xun4rt: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@github.com/Xun4rt/Cegado-Bot.git && git pull origin main --no-edit && git add . && git commit -m "${text}" && git push origin main`,
+    `git config user.name "Xun4rt" && git config user.email "Xun4rt@users.noreply.github.com" && git pull origin main --no-edit && git add . && git commit -m "${text}" && git push origin main`,
 
     (err, stdout, stderr) => {
 

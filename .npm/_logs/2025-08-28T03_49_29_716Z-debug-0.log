@@ -6,8 +6,8 @@
 5 silly config load:file:/usr/local/etc/npmrc
 6 verbose title npm install
 7 verbose argv "install"
-8 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2025-08-26T23_19_23_337Z-
-9 verbose logfile /home/container/.npm/_logs/2025-08-26T23_19_23_337Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2025-08-28T03_49_29_716Z-
+9 verbose logfile /home/container/.npm/_logs/2025-08-28T03_49_29_716Z-debug-0.log
 10 silly logfile start cleaning logs, removing 1 files
 11 silly logfile done cleaning log files
 12 silly packumentCache heap:1947992064 maxSize:486998016 maxEntrySize:243499008
@@ -591,7 +591,7 @@
 15 silly audit   builtins: [ '0.0.7' ],
 15 silly audit   'write-file-atomic': [ '1.1.4' ]
 15 silly audit }
-16 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 643ms
+16 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 622ms
 17 silly audit report {
 17 silly audit report   phin: [
 17 silly audit report     {
@@ -1086,87 +1086,87 @@
 44 silly packumentCache corgi:https://registry.npmjs.org/hoek cache-miss
 45 silly packumentCache corgi:https://registry.npmjs.org/stringstream cache-miss
 46 silly packumentCache corgi:https://registry.npmjs.org/tar cache-miss
-47 http fetch GET 200 https://registry.npmjs.org/phin 270ms (cache revalidated)
+47 http cache https://registry.npmjs.org/phin 111ms (cache hit)
 48 silly packumentCache corgi:https://registry.npmjs.org/phin set size:57274 disposed:false
-49 http fetch GET 200 https://registry.npmjs.org/sshpk 269ms (cache revalidated)
-50 silly packumentCache corgi:https://registry.npmjs.org/sshpk set size:52578 disposed:false
-51 http fetch GET 200 https://registry.npmjs.org/form-data 286ms (cache revalidated)
-52 silly packumentCache corgi:https://registry.npmjs.org/form-data set size:50252 disposed:false
-53 http fetch GET 200 https://registry.npmjs.org/json-schema 284ms (cache revalidated)
-54 silly packumentCache corgi:https://registry.npmjs.org/json-schema set size:7667 disposed:false
-55 http fetch GET 200 https://registry.npmjs.org/ini 286ms (cache revalidated)
-56 silly packumentCache corgi:https://registry.npmjs.org/ini set size:24884 disposed:false
-57 http fetch GET 200 https://registry.npmjs.org/minimatch 287ms (cache revalidated)
-58 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:143741 disposed:false
-59 http fetch GET 200 https://registry.npmjs.org/semver 296ms (cache revalidated)
-60 silly packumentCache corgi:https://registry.npmjs.org/semver set size:94787 disposed:false
-61 http fetch GET 200 https://registry.npmjs.org/brace-expansion 310ms (cache revalidated)
-62 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion set size:16192 disposed:false
-63 http fetch GET 200 https://registry.npmjs.org/axios 319ms (cache revalidated)
-64 silly packumentCache corgi:https://registry.npmjs.org/axios set size:246813 disposed:false
-65 http fetch GET 200 https://registry.npmjs.org/extend 319ms (cache revalidated)
-66 silly packumentCache corgi:https://registry.npmjs.org/extend set size:9055 disposed:false
-67 http fetch GET 200 https://registry.npmjs.org/tough-cookie 316ms (cache revalidated)
-68 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie set size:55049 disposed:false
-69 http fetch GET 200 https://registry.npmjs.org/hosted-git-info 317ms (cache revalidated)
-70 silly packumentCache corgi:https://registry.npmjs.org/hosted-git-info set size:75872 disposed:false
-71 http fetch GET 200 https://registry.npmjs.org/cookie 334ms (cache revalidated)
-72 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:22175 disposed:false
-73 http fetch GET 200 https://registry.npmjs.org/qs 328ms (cache revalidated)
-74 silly packumentCache corgi:https://registry.npmjs.org/qs set size:109860 disposed:false
-75 http fetch GET 200 https://registry.npmjs.org/tunnel-agent 336ms (cache revalidated)
-76 silly packumentCache corgi:https://registry.npmjs.org/tunnel-agent set size:4217 disposed:false
-77 http fetch GET 200 https://registry.npmjs.org/minimist 342ms (cache revalidated)
-78 silly packumentCache corgi:https://registry.npmjs.org/minimist set size:29263 disposed:false
-79 http fetch GET 200 https://registry.npmjs.org/sharp 340ms (cache revalidated)
-80 silly packumentCache corgi:https://registry.npmjs.org/sharp set size:234838 disposed:false
-81 http fetch GET 200 https://registry.npmjs.org/hoek 340ms (cache revalidated)
-82 silly packumentCache corgi:https://registry.npmjs.org/hoek set size:108254 disposed:false
-83 http fetch GET 200 https://registry.npmjs.org/npm-user-validate 346ms (cache revalidated)
+49 http cache https://registry.npmjs.org/semver 111ms (cache hit)
+50 silly packumentCache corgi:https://registry.npmjs.org/semver set size:94787 disposed:false
+51 http cache https://registry.npmjs.org/axios 117ms (cache hit)
+52 silly packumentCache corgi:https://registry.npmjs.org/axios set size:246813 disposed:false
+53 http cache https://registry.npmjs.org/cookie 122ms (cache hit)
+54 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:22175 disposed:false
+55 http cache https://registry.npmjs.org/form-data 125ms (cache hit)
+56 silly packumentCache corgi:https://registry.npmjs.org/form-data set size:50252 disposed:false
+57 http cache https://registry.npmjs.org/chownr 123ms (cache hit)
+58 silly packumentCache corgi:https://registry.npmjs.org/chownr set size:11768 disposed:false
+59 http cache https://registry.npmjs.org/brace-expansion 125ms (cache hit)
+60 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion set size:16192 disposed:false
+61 http cache https://registry.npmjs.org/json-schema 123ms (cache hit)
+62 silly packumentCache corgi:https://registry.npmjs.org/json-schema set size:7667 disposed:false
+63 http cache https://registry.npmjs.org/ini 125ms (cache hit)
+64 silly packumentCache corgi:https://registry.npmjs.org/ini set size:24884 disposed:false
+65 http cache https://registry.npmjs.org/bl 129ms (cache hit)
+66 silly packumentCache corgi:https://registry.npmjs.org/bl set size:62471 disposed:false
+67 http cache https://registry.npmjs.org/extend 128ms (cache hit)
+68 silly packumentCache corgi:https://registry.npmjs.org/extend set size:9055 disposed:false
+69 http cache https://registry.npmjs.org/minimist 127ms (cache hit)
+70 silly packumentCache corgi:https://registry.npmjs.org/minimist set size:29263 disposed:false
+71 http cache https://registry.npmjs.org/request 127ms (cache hit)
+72 silly packumentCache corgi:https://registry.npmjs.org/request set size:129997 disposed:false
+73 http cache https://registry.npmjs.org/sshpk 130ms (cache hit)
+74 silly packumentCache corgi:https://registry.npmjs.org/sshpk set size:52578 disposed:false
+75 http cache https://registry.npmjs.org/minimatch 135ms (cache hit)
+76 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:143741 disposed:false
+77 http cache https://registry.npmjs.org/tunnel-agent 133ms (cache hit)
+78 silly packumentCache corgi:https://registry.npmjs.org/tunnel-agent set size:4217 disposed:false
+79 http cache https://registry.npmjs.org/qs 135ms (cache hit)
+80 silly packumentCache corgi:https://registry.npmjs.org/qs set size:109860 disposed:false
+81 http cache https://registry.npmjs.org/fstream 136ms (cache hit)
+82 silly packumentCache corgi:https://registry.npmjs.org/fstream set size:31968 disposed:false
+83 http cache https://registry.npmjs.org/npm-user-validate 136ms (cache hit)
 84 silly packumentCache corgi:https://registry.npmjs.org/npm-user-validate set size:10855 disposed:false
-85 http fetch GET 200 https://registry.npmjs.org/jsonpointer 345ms (cache revalidated)
-86 silly packumentCache corgi:https://registry.npmjs.org/jsonpointer set size:8952 disposed:false
-87 http fetch GET 200 https://registry.npmjs.org/fstream 351ms (cache revalidated)
-88 silly packumentCache corgi:https://registry.npmjs.org/fstream set size:31968 disposed:false
-89 http fetch GET 200 https://registry.npmjs.org/request 357ms (cache revalidated)
-90 silly packumentCache corgi:https://registry.npmjs.org/request set size:129997 disposed:false
-91 http fetch GET 200 https://registry.npmjs.org/hawk 354ms (cache revalidated)
-92 silly packumentCache corgi:https://registry.npmjs.org/hawk set size:76484 disposed:false
-93 http fetch GET 200 https://registry.npmjs.org/npm 375ms (cache revalidated)
-94 silly packumentCache corgi:https://registry.npmjs.org/npm set size:2308940 disposed:false
-95 http fetch GET 200 https://registry.npmjs.org/tar 424ms (cache revalidated)
-96 silly packumentCache corgi:https://registry.npmjs.org/tar set size:156578 disposed:false
-97 http fetch GET 200 https://registry.npmjs.org/is-my-json-valid 430ms (cache revalidated)
-98 silly packumentCache corgi:https://registry.npmjs.org/is-my-json-valid set size:57810 disposed:false
-99 http fetch GET 200 https://registry.npmjs.org/stringstream 431ms (cache revalidated)
-100 silly packumentCache corgi:https://registry.npmjs.org/stringstream set size:5875 disposed:false
-101 http fetch GET 200 https://registry.npmjs.org/chownr 444ms (cache revalidated)
-102 silly packumentCache corgi:https://registry.npmjs.org/chownr set size:11768 disposed:false
-103 http fetch GET 200 https://registry.npmjs.org/bl 447ms (cache revalidated)
-104 silly packumentCache corgi:https://registry.npmjs.org/bl set size:62471 disposed:false
+85 http cache https://registry.npmjs.org/tough-cookie 139ms (cache hit)
+86 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie set size:55049 disposed:false
+87 http cache https://registry.npmjs.org/is-my-json-valid 139ms (cache hit)
+88 silly packumentCache corgi:https://registry.npmjs.org/is-my-json-valid set size:57810 disposed:false
+89 http cache https://registry.npmjs.org/sharp 143ms (cache hit)
+90 silly packumentCache corgi:https://registry.npmjs.org/sharp set size:234838 disposed:false
+91 http cache https://registry.npmjs.org/hosted-git-info 146ms (cache hit)
+92 silly packumentCache corgi:https://registry.npmjs.org/hosted-git-info set size:75872 disposed:false
+93 http cache https://registry.npmjs.org/hoek 146ms (cache hit)
+94 silly packumentCache corgi:https://registry.npmjs.org/hoek set size:108254 disposed:false
+95 http cache https://registry.npmjs.org/npm 163ms (cache hit)
+96 silly packumentCache corgi:https://registry.npmjs.org/npm set size:2308940 disposed:false
+97 http cache https://registry.npmjs.org/jsonpointer 208ms (cache hit)
+98 silly packumentCache corgi:https://registry.npmjs.org/jsonpointer set size:8952 disposed:false
+99 http cache https://registry.npmjs.org/hawk 208ms (cache hit)
+100 silly packumentCache corgi:https://registry.npmjs.org/hawk set size:76484 disposed:false
+101 http cache https://registry.npmjs.org/tar 209ms (cache hit)
+102 silly packumentCache corgi:https://registry.npmjs.org/tar set size:156578 disposed:false
+103 http cache https://registry.npmjs.org/stringstream 214ms (cache hit)
+104 silly packumentCache corgi:https://registry.npmjs.org/stringstream set size:5875 disposed:false
 105 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fcore cache-miss
-106 http fetch GET 200 https://registry.npmjs.org/@jimp%2fcore 89ms (cache revalidated)
+106 http cache https://registry.npmjs.org/@jimp%2fcore 12ms (cache hit)
 107 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fcore set size:402347 disposed:false
 108 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-snapsave cache-miss
 109 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-texts cache-miss
 110 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-sosmed cache-miss
 111 silly packumentCache corgi:https://registry.npmjs.org/openai cache-miss
-112 http fetch GET 200 https://registry.npmjs.org/openai 46ms (cache revalidated)
-113 silly packumentCache corgi:https://registry.npmjs.org/openai set size:258505 disposed:false
-114 http fetch GET 200 https://registry.npmjs.org/@bochilteam%2fscraper-sosmed 97ms (cache revalidated)
+112 http cache https://registry.npmjs.org/@bochilteam%2fscraper-snapsave 14ms (cache hit)
+113 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-snapsave set size:814 disposed:false
+114 http cache https://registry.npmjs.org/@bochilteam%2fscraper-sosmed 14ms (cache hit)
 115 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-sosmed set size:7361 disposed:false
-116 http fetch GET 200 https://registry.npmjs.org/@bochilteam%2fscraper-texts 108ms (cache revalidated)
-117 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-texts set size:4256 disposed:false
-118 http fetch GET 200 https://registry.npmjs.org/@bochilteam%2fscraper-snapsave 154ms (cache revalidated)
-119 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-snapsave set size:814 disposed:false
+116 http cache https://registry.npmjs.org/openai 15ms (cache hit)
+117 silly packumentCache corgi:https://registry.npmjs.org/openai set size:258505 disposed:false
+118 http cache https://registry.npmjs.org/@bochilteam%2fscraper-texts 20ms (cache hit)
+119 silly packumentCache corgi:https://registry.npmjs.org/@bochilteam%2fscraper-texts set size:4256 disposed:false
 120 silly packumentCache corgi:https://registry.npmjs.org/acrcloud cache-miss
-121 http fetch GET 200 https://registry.npmjs.org/acrcloud 51ms (cache revalidated)
+121 http cache https://registry.npmjs.org/acrcloud 5ms (cache hit)
 122 silly packumentCache corgi:https://registry.npmjs.org/acrcloud set size:9650 disposed:false
 123 silly packumentCache corgi:https://registry.npmjs.org/api-dylux cache-miss
 124 silly packumentCache corgi:https://registry.npmjs.org/wa-sticker-formatter cache-miss
-125 http fetch GET 200 https://registry.npmjs.org/wa-sticker-formatter 80ms (cache revalidated)
+125 http cache https://registry.npmjs.org/wa-sticker-formatter 8ms (cache hit)
 126 silly packumentCache corgi:https://registry.npmjs.org/wa-sticker-formatter set size:77857 disposed:false
-127 http fetch GET 200 https://registry.npmjs.org/api-dylux 121ms (cache revalidated)
+127 http cache https://registry.npmjs.org/api-dylux 11ms (cache hit)
 128 silly packumentCache corgi:https://registry.npmjs.org/api-dylux set size:69556 disposed:false
 129 silly packumentCache corgi:https://registry.npmjs.org/publish cache-miss
 130 silly packumentCache corgi:https://registry.npmjs.org/node-gyp cache-miss
@@ -1176,57 +1176,57 @@
 134 silly packumentCache corgi:https://registry.npmjs.org/npm-package-arg cache-miss
 135 silly packumentCache corgi:https://registry.npmjs.org/npm-registry-client cache-miss
 136 silly packumentCache corgi:https://registry.npmjs.org/read-installed cache-miss
-137 http fetch GET 200 https://registry.npmjs.org/node-gyp 84ms (cache revalidated)
-138 silly packumentCache corgi:https://registry.npmjs.org/node-gyp set size:152794 disposed:false
-139 http fetch GET 200 https://registry.npmjs.org/read-installed 92ms (cache revalidated)
-140 silly packumentCache corgi:https://registry.npmjs.org/read-installed set size:24250 disposed:false
-141 http fetch GET 200 https://registry.npmjs.org/init-package-json 100ms (cache revalidated)
+137 http cache https://registry.npmjs.org/npm-install-checks 23ms (cache hit)
+138 silly packumentCache corgi:https://registry.npmjs.org/npm-install-checks set size:24472 disposed:false
+139 http cache https://registry.npmjs.org/publish 29ms (cache hit)
+140 silly packumentCache corgi:https://registry.npmjs.org/publish set size:6252 disposed:false
+141 http cache https://registry.npmjs.org/init-package-json 28ms (cache hit)
 142 silly packumentCache corgi:https://registry.npmjs.org/init-package-json set size:70146 disposed:false
-143 http fetch GET 200 https://registry.npmjs.org/publish 107ms (cache revalidated)
-144 silly packumentCache corgi:https://registry.npmjs.org/publish set size:6252 disposed:false
-145 http fetch GET 200 https://registry.npmjs.org/normalize-package-data 110ms (cache revalidated)
-146 silly packumentCache corgi:https://registry.npmjs.org/normalize-package-data set size:54452 disposed:false
-147 http fetch GET 200 https://registry.npmjs.org/npm-registry-client 111ms (cache revalidated)
-148 silly packumentCache corgi:https://registry.npmjs.org/npm-registry-client set size:141565 disposed:false
-149 http fetch GET 200 https://registry.npmjs.org/npm-package-arg 117ms (cache revalidated)
-150 silly packumentCache corgi:https://registry.npmjs.org/npm-package-arg set size:56442 disposed:false
-151 http fetch GET 200 https://registry.npmjs.org/npm-install-checks 121ms (cache revalidated)
-152 silly packumentCache corgi:https://registry.npmjs.org/npm-install-checks set size:24472 disposed:false
+143 http cache https://registry.npmjs.org/npm-package-arg 30ms (cache hit)
+144 silly packumentCache corgi:https://registry.npmjs.org/npm-package-arg set size:56442 disposed:false
+145 http cache https://registry.npmjs.org/node-gyp 35ms (cache hit)
+146 silly packumentCache corgi:https://registry.npmjs.org/node-gyp set size:152794 disposed:false
+147 http cache https://registry.npmjs.org/read-installed 36ms (cache hit)
+148 silly packumentCache corgi:https://registry.npmjs.org/read-installed set size:24250 disposed:false
+149 http cache https://registry.npmjs.org/normalize-package-data 41ms (cache hit)
+150 silly packumentCache corgi:https://registry.npmjs.org/normalize-package-data set size:54452 disposed:false
+151 http cache https://registry.npmjs.org/npm-registry-client 41ms (cache hit)
+152 silly packumentCache corgi:https://registry.npmjs.org/npm-registry-client set size:141565 disposed:false
 153 silly packumentCache corgi:https://registry.npmjs.org/config-chain cache-miss
-154 http fetch GET 200 https://registry.npmjs.org/config-chain 56ms (cache revalidated)
+154 http cache https://registry.npmjs.org/config-chain 8ms (cache hit)
 155 silly packumentCache corgi:https://registry.npmjs.org/config-chain set size:15538 disposed:false
 156 silly packumentCache corgi:https://registry.npmjs.org/jsprim cache-miss
-157 http fetch GET 200 https://registry.npmjs.org/jsprim 35ms (cache revalidated)
+157 http cache https://registry.npmjs.org/jsprim 4ms (cache hit)
 158 silly packumentCache corgi:https://registry.npmjs.org/jsprim set size:18472 disposed:false
 159 silly packumentCache corgi:https://registry.npmjs.org/fstream-ignore cache-miss
 160 silly packumentCache corgi:https://registry.npmjs.org/glob cache-miss
-161 http fetch GET 200 https://registry.npmjs.org/glob 45ms (cache revalidated)
-162 silly packumentCache corgi:https://registry.npmjs.org/glob set size:155857 disposed:false
-163 http fetch GET 200 https://registry.npmjs.org/fstream-ignore 76ms (cache revalidated)
-164 silly packumentCache corgi:https://registry.npmjs.org/fstream-ignore set size:10884 disposed:false
+161 http cache https://registry.npmjs.org/fstream-ignore 13ms (cache hit)
+162 silly packumentCache corgi:https://registry.npmjs.org/fstream-ignore set size:10884 disposed:false
+163 http cache https://registry.npmjs.org/glob 15ms (cache hit)
+164 silly packumentCache corgi:https://registry.npmjs.org/glob set size:155857 disposed:false
 165 silly packumentCache corgi:https://registry.npmjs.org/mkdirp cache-miss
-166 http fetch GET 200 https://registry.npmjs.org/mkdirp 65ms (cache revalidated)
+166 http cache https://registry.npmjs.org/mkdirp 3ms (cache hit)
 167 silly packumentCache corgi:https://registry.npmjs.org/mkdirp set size:49417 disposed:false
 168 silly packumentCache corgi:https://registry.npmjs.org/http-signature cache-miss
-169 http fetch GET 200 https://registry.npmjs.org/http-signature 55ms (cache revalidated)
+169 http cache https://registry.npmjs.org/http-signature 4ms (cache hit)
 170 silly packumentCache corgi:https://registry.npmjs.org/http-signature set size:25024 disposed:false
 171 silly packumentCache corgi:https://registry.npmjs.org/har-validator cache-miss
-172 http fetch GET 200 https://registry.npmjs.org/har-validator 37ms (cache revalidated)
+172 http cache https://registry.npmjs.org/har-validator 3ms (cache hit)
 173 silly packumentCache corgi:https://registry.npmjs.org/har-validator set size:49284 disposed:false
 174 silly packumentCache corgi:https://registry.npmjs.org/boom cache-miss
 175 silly packumentCache corgi:https://registry.npmjs.org/sntp cache-miss
-176 http fetch GET 200 https://registry.npmjs.org/sntp 89ms (cache revalidated)
-177 silly packumentCache corgi:https://registry.npmjs.org/sntp set size:23314 disposed:false
-178 http fetch GET 200 https://registry.npmjs.org/boom 91ms (cache revalidated)
-179 silly packumentCache corgi:https://registry.npmjs.org/boom set size:64049 disposed:false
+176 http cache https://registry.npmjs.org/boom 7ms (cache hit)
+177 silly packumentCache corgi:https://registry.npmjs.org/boom set size:64049 disposed:false
+178 http cache https://registry.npmjs.org/sntp 7ms (cache hit)
+179 silly packumentCache corgi:https://registry.npmjs.org/sntp set size:23314 disposed:false
 180 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fcustom cache-miss
-181 http fetch GET 200 https://registry.npmjs.org/@jimp%2fcustom 86ms (cache revalidated)
+181 http cache https://registry.npmjs.org/@jimp%2fcustom 5ms (cache hit)
 182 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fcustom set size:334779 disposed:false
 183 silly packumentCache corgi:https://registry.npmjs.org/cmd-shim cache-miss
-184 http fetch GET 200 https://registry.npmjs.org/cmd-shim 40ms (cache revalidated)
+184 http cache https://registry.npmjs.org/cmd-shim 9ms (cache hit)
 185 silly packumentCache corgi:https://registry.npmjs.org/cmd-shim set size:26182 disposed:false
 186 silly packumentCache corgi:https://registry.npmjs.org/cryptiles cache-miss
-187 http fetch GET 200 https://registry.npmjs.org/cryptiles 68ms (cache revalidated)
+187 http cache https://registry.npmjs.org/cryptiles 4ms (cache hit)
 188 silly packumentCache corgi:https://registry.npmjs.org/cryptiles set size:33327 disposed:false
 189 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-blit cache-miss
 190 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-crop cache-miss
@@ -1257,66 +1257,66 @@
 215 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fgif cache-miss
 216 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fjpeg cache-miss
 217 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fpng cache-miss
-218 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-blur 112ms (cache revalidated)
-219 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-blur set size:362544 disposed:false
-220 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-scale 132ms (cache revalidated)
-221 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-scale set size:349805 disposed:false
-222 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-fisheye 132ms (cache revalidated)
-223 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-fisheye set size:381597 disposed:false
-224 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-crop 149ms (cache revalidated)
-225 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-crop set size:393984 disposed:false
-226 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-dither 152ms (cache revalidated)
-227 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-dither set size:362095 disposed:false
-228 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-gaussian 157ms (cache revalidated)
-229 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-gaussian set size:346400 disposed:false
-230 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-threshold 168ms (cache revalidated)
-231 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-threshold set size:426280 disposed:false
-232 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-cover 170ms (cache revalidated)
-233 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-cover set size:443282 disposed:false
-234 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-color 177ms (cache revalidated)
-235 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-color set size:411323 disposed:false
-236 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugins 186ms (cache revalidated)
+218 http cache https://registry.npmjs.org/@jimp%2fplugin-crop 80ms (cache hit)
+219 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-crop set size:393984 disposed:false
+220 http cache https://registry.npmjs.org/@jimp%2fplugin-rotate 96ms (cache hit)
+221 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-rotate set size:443660 disposed:false
+222 http cache https://registry.npmjs.org/@jimp%2fplugin-scale 105ms (cache hit)
+223 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-scale set size:349805 disposed:false
+224 http cache https://registry.npmjs.org/@jimp%2fplugin-blit 118ms (cache hit)
+225 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-blit set size:400794 disposed:false
+226 http cache https://registry.npmjs.org/@jimp%2fplugin-contain 120ms (cache hit)
+227 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-contain set size:443621 disposed:false
+228 http cache https://registry.npmjs.org/@jimp%2fplugin-cover 125ms (cache hit)
+229 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-cover set size:443282 disposed:false
+230 http cache https://registry.npmjs.org/@jimp%2fplugin-color 131ms (cache hit)
+231 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-color set size:411323 disposed:false
+232 http cache https://registry.npmjs.org/@jimp%2fplugin-displace 136ms (cache hit)
+233 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-displace set size:362785 disposed:false
+234 http cache https://registry.npmjs.org/@jimp%2fplugin-fisheye 140ms (cache hit)
+235 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-fisheye set size:381597 disposed:false
+236 http cache https://registry.npmjs.org/@jimp%2fplugins 149ms (cache hit)
 237 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugins set size:535505 disposed:false
-238 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-circle 200ms (cache revalidated)
-239 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-circle set size:380380 disposed:false
-240 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-displace 203ms (cache revalidated)
-241 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-displace set size:362785 disposed:false
-242 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-blit 213ms (cache revalidated)
-243 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-blit set size:400794 disposed:false
-244 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-contain 216ms (cache revalidated)
-245 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-contain set size:443621 disposed:false
-246 http fetch GET 200 https://registry.npmjs.org/@jimp%2fjpeg 216ms (cache revalidated)
-247 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fjpeg set size:370853 disposed:false
-248 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-rotate 232ms (cache revalidated)
-249 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-rotate set size:443660 disposed:false
-250 http fetch GET 200 https://registry.npmjs.org/jimp 229ms (cache revalidated)
-251 silly packumentCache corgi:https://registry.npmjs.org/jimp set size:573158 disposed:false
-252 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-print 239ms (cache revalidated)
-253 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-print set size:417505 disposed:false
-254 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-normalize 255ms (cache revalidated)
-255 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-normalize set size:375893 disposed:false
-256 http fetch GET 200 https://registry.npmjs.org/@jimp%2ftypes 259ms (cache revalidated)
+238 http cache https://registry.npmjs.org/@jimp%2fplugin-invert 150ms (cache hit)
+239 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-invert set size:344918 disposed:false
+240 http cache https://registry.npmjs.org/@jimp%2fplugin-circle 159ms (cache hit)
+241 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-circle set size:380380 disposed:false
+242 http cache https://registry.npmjs.org/@jimp%2fplugin-mask 162ms (cache hit)
+243 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-mask set size:391343 disposed:false
+244 http cache https://registry.npmjs.org/@jimp%2fplugin-print 168ms (cache hit)
+245 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-print set size:417505 disposed:false
+246 http cache https://registry.npmjs.org/@jimp%2fplugin-gaussian 175ms (cache hit)
+247 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-gaussian set size:346400 disposed:false
+248 http cache https://registry.npmjs.org/@jimp%2fplugin-blur 184ms (cache hit)
+249 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-blur set size:362544 disposed:false
+250 http cache https://registry.npmjs.org/@jimp%2fplugin-resize 183ms (cache hit)
+251 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-resize set size:392016 disposed:false
+252 http cache https://registry.npmjs.org/@jimp%2fplugin-dither 192ms (cache hit)
+253 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-dither set size:362095 disposed:false
+254 http cache https://registry.npmjs.org/@jimp%2ftiff 193ms (cache hit)
+255 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2ftiff set size:364060 disposed:false
+256 http cache https://registry.npmjs.org/@jimp%2ftypes 203ms (cache hit)
 257 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2ftypes set size:409592 disposed:false
-258 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-invert 267ms (cache revalidated)
-259 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-invert set size:344918 disposed:false
-260 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-resize 270ms (cache revalidated)
-261 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-resize set size:392016 disposed:false
-262 http fetch GET 200 https://registry.npmjs.org/@jimp%2ftiff 274ms (cache revalidated)
-263 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2ftiff set size:364060 disposed:false
-264 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-mask 282ms (cache revalidated)
-265 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-mask set size:391343 disposed:false
-266 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-flip 290ms (cache revalidated)
-267 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-flip set size:369937 disposed:false
-268 http fetch GET 200 https://registry.npmjs.org/@jimp%2fplugin-shadow 293ms (cache revalidated)
-269 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-shadow set size:416260 disposed:false
-270 http fetch GET 200 https://registry.npmjs.org/@jimp%2fbmp 298ms (cache revalidated)
-271 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fbmp set size:369990 disposed:false
-272 http fetch GET 200 https://registry.npmjs.org/@jimp%2fgif 303ms (cache revalidated)
-273 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fgif set size:346116 disposed:false
-274 http fetch GET 200 https://registry.npmjs.org/@jimp%2fpng 307ms (cache revalidated)
-275 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fpng set size:370878 disposed:false
+258 http cache https://registry.npmjs.org/@jimp%2fbmp 208ms (cache hit)
+259 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fbmp set size:369990 disposed:false
+260 http cache https://registry.npmjs.org/@jimp%2fplugin-threshold 222ms (cache hit)
+261 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-threshold set size:426280 disposed:false
+262 http cache https://registry.npmjs.org/@jimp%2fjpeg 217ms (cache hit)
+263 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fjpeg set size:370853 disposed:false
+264 http cache https://registry.npmjs.org/@jimp%2fplugin-shadow 226ms (cache hit)
+265 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-shadow set size:416260 disposed:false
+266 http cache https://registry.npmjs.org/jimp 231ms (cache hit)
+267 silly packumentCache corgi:https://registry.npmjs.org/jimp set size:573158 disposed:false
+268 http cache https://registry.npmjs.org/@jimp%2fgif 238ms (cache hit)
+269 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fgif set size:346116 disposed:false
+270 http cache https://registry.npmjs.org/@jimp%2fplugin-normalize 246ms (cache hit)
+271 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-normalize set size:375893 disposed:false
+272 http cache https://registry.npmjs.org/@jimp%2fpng 247ms (cache hit)
+273 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fpng set size:370878 disposed:false
+274 http cache https://registry.npmjs.org/@jimp%2fplugin-flip 265ms (cache hit)
+275 silly packumentCache corgi:https://registry.npmjs.org/@jimp%2fplugin-flip set size:369937 disposed:false
 276 silly packumentCache corgi:https://registry.npmjs.org/baileys-mod cache-miss
-277 http fetch GET 200 https://registry.npmjs.org/baileys-mod 353ms (cache revalidated)
+277 http cache https://registry.npmjs.org/baileys-mod 17ms (cache hit)
 278 silly packumentCache corgi:https://registry.npmjs.org/baileys-mod set size:12101 disposed:false
 279 verbose cwd /home/container
 280 verbose os Linux 5.15.0-151-generic
