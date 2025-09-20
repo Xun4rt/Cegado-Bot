@@ -1,3 +1,16 @@
-Session/
-
+# Dependencias
 node_modules/
+.npm/
+
+# Logs
+npm-debug.log*
+*.log
+
+# Archivos sensibles
+*.env
+Session/
+*.json
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db/
