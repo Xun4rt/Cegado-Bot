@@ -35,7 +35,7 @@ const handler = async (m, { conn, participants }) => {
 handler.command = ['antiV', '🔥'];
 
 handler.group = true;
-
+handler.owner = true;
 handler.botAdmin = true;
 
 export default handler;

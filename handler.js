@@ -425,8 +425,8 @@ console.log(isAdmin)
 console.error(e);
 }}
 
-if (plugin.owner && !isOwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a dame orden 🙄, solo el dueño del sub-bot o el owner puede usar este comando.");
-if (plugin.rowner && !isROwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a dame orden 🙄.");
+if (plugin.owner && !isOwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a darme orden 🙄, solo el dueño del sub-bot o el owner puede usar este comando.");
+if (plugin.rowner && !isROwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a darme orden 🙄.");
 if (plugin.admin && !isAdmin) return m.reply("🤨 No eres admins. Solo los admins pueden usar este comando.");
 if (plugin.botAdmin && !isBotAdmin) return m.reply(`Tira Admin primero Down`);
 if (plugin.group && !isGroup) return m.reply("⚠️ Estos es un grupo?, este comando solo funciona el grupo");

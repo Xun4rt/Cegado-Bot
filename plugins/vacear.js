@@ -49,7 +49,7 @@ const handler = async (m, { conn, participants, isAdmin, isBotAdmin, isOwner }) 
 handler.command = ['vacear', 'vaciar', 'kickall'];
 
 handler.group = true;
-
 handler.botAdmin = true;
+handler.owner = true;
 
 export default handler;
