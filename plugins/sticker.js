@@ -1,75 +1,23 @@
-import fs from "fs"
+import { writeExif } from "../lib/sticker.js"
 
-import path from "path"
-
-import { Sticker, StickerTypes } from "wa-sticker-formatter"
-
-let handler = async (m, { conn }) => {
-
-  // detectar si es mensaje con imagen/video directo o si es respuesta
-
+let handler = async (m, { conn, usedPrefix, command }) => {
   let q = m.quoted ? m.quoted : m
-
   let mime = (q.msg || q).mimetype || ""
 
-  if (!mime) return m.reply(" Manda o responde a una imagen, video o gif para hacer sticker")
-
-  // descargar media
-
-  let media = await q.download()
-
-  // ruta temporal
-
-  let inputPath = path.join(process.cwd(), "temp_input")
-
-  fs.writeFileSync(inputPath, media)
-
-  try {
-
-    // obtener nombre o número
-
-    let name = await conn.getName(m.sender)
-
-    if (!name || name.trim() === "") {
-
-      name = m.sender.split("@")[0]  // número si no tiene nombre
-
-    }
-
-    // crear sticker con metadata
-
-    let sticker = new Sticker(inputPath, {
-
-      pack: `${name} • 3-44`,   // nombre/número + insignia
-
-      author: "🕊️",        // fijo
-
-      type: StickerTypes.CROPPED,
-
-      quality: 90
-
-    })
-
-    let buffer = await sticker.toBuffer()
-
-    await conn.sendMessage(m.chat, { sticker: buffer }, { quoted: m })
-
-  } catch (e) {
-
-    console.error(e)
-
-    m.reply("❌ Error al crear sticker")
-
+  if (!/image|video/.test(mime)) {
+    return m.reply(`📸 Responde a una imagen o video con *${usedPrefix + command}*`)
   }
 
-  // limpiar archivos
+  let media = await q.download()
+  if (!media) return m.reply("❌ No pude descargar el archivo")
 
-  if (fs.existsSync(inputPath)) fs.unlinkSync(inputPath)
+  let sticker = await writeExif(media, {
+    packname: "Cegado-Bot",
+    author: "by Tú"
+  })
 
+  await conn.sendMessage(m.chat, { sticker }, { quoted: m })
 }
 
-// solo responde a .s o .sticker
-
-handler.command = /^s(ticker)?$/i
-
+handler.command = ["s", "sticker", "stiker"]
 export default handler
