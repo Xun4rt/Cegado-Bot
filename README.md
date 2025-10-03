@@ -1,1 +1,1 @@
-# Cegado-Bot
+Este bot le pertenece al grupo privado Cgd 🕊️
