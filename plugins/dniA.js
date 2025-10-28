@@ -13,7 +13,7 @@ let handler = async (m, { conn, args }) => {
     let { data } = await axios.get(url)
 
     if (data.status_code !== 200 || !data.data) {
-      return m.reply("❌ No se encontraron datos para ese DNI.")
+      return m.reply(" No se encontraron datos para ese DNI.")
     }
 
     let d = data.data
@@ -35,9 +35,9 @@ let handler = async (m, { conn, args }) => {
 
   } catch (e) {
     console.error(e)
-    m.reply("❌ Error al consultar la API.")
+    m.reply("Error al consultar la API.")
   }
 }
 
-handler.command = /^sisargen$/i
+handler.command = /^dniA$/i
 export default handler

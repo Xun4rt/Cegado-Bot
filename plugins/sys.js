@@ -32,8 +32,8 @@ const handler = async (m, { conn, command }) => {
 ╭┈۫̊̇━───────────۫━┈╮
 ┃ ➣ .ip
 ┃ ➣ .bin
-┃ ➣ .dnip   (Perú)
-┃ ➣ .dnicr (Costa Rica)
+┃ ➣ .dnip (Perú)
+┃ ➣ .cr (Costa Rica)
 ┃ ➣ .dniA (argentina)
 ┃ ➣ .traducir
 ┃ ➣ .screenshot

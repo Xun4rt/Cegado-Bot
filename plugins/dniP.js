@@ -1,73 +1,50 @@
+// plugins/dniPeru.js
 import fetch from 'node-fetch';
-import * as cheerio from 'cheerio';
 
-const handler = async (m, { args, command, text }) => {
-  if (!text) return m.reply(`⚠️ Ejemplo de uso:\n.dnip 12345678\n.dnip Juan Pérez`);
+let handler = async (m, { conn, args }) => {
+  if (!args[0]) return conn.reply(m.chat, 'USO: *.dni [DNI o nombre completo]*', m);
 
-  let isDNI = /^\d{8}$/.test(text.trim());
-  if (isDNI) {
-    // ✅ Consulta por DNI real (Perú)
-    const dni = text.trim();
-    const token = '16251.DrLTPm15Ne8VWoHaVUP7qT54puU0RnJj'; // <- Cambia por tu token real
-    try {
-      const res = await fetch(`https://api.apis.net.pe/v1/dni?numero=${dni}`, {
-        headers: { Authorization: token }
-      });
+  let query = args.join(' ');
 
-      const textRes = await res.text();
+  try {
+    // Reemplaza 'TU_TOKEN_AQUI' con tu token real de Decolecta
+    let token = 'sk_10719.CMl9lbxPBS3m91IfqkMJDoj1FpiQ1KSc';
+    let url = `https://api.decolecta.com/v1/dni/${encodeURIComponent(query)}`;
 
-      if (!res.ok || textRes.startsWith("Not Found")) {
-        return m.reply('❌ DNI no encontrado o inválido.');
+    let res = await fetch(url, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
       }
+    });
 
-      let json;
-      try {
-        json = JSON.parse(textRes);
-      } catch {
-        return m.reply('❌ La respuesta no fue válida. Puede que la API esté caída.');
-      }
-
-      const info = `📋 *Datos reales del DNI*:
-🪪 DNI: ${json.numeroDocumento}
- Nombres: ${json.nombres}
- Apellidos: ${json.apellidoPaterno} ${json.apellidoMaterno}
- Nacimiento: ${json.fechaNacimiento || 'No disponible'}
- Departamento: ${json.ubigeoReniec || 'No disponible'}
- Dirección: ${json.direccion || 'No disponible'}`;
-
-      await m.reply(info);
-    } catch (e) {
-      console.error(e);
-      m.reply('❌ Error al consultar el DNI.');
+    if (!res.ok) {
+      return conn.reply(m.chat, `ERROR: No se pudo consultar la API (${res.status})`, m);
     }
 
-  } else {
-    // 🕵️ Scraping por nombre
-    try {
-      const res = await fetch(`https://eldni.com/buscar-por-nombre/${encodeURIComponent(text)}`);
-      const html = await res.text();
-      const $ = cheerio.load(html);
+    let data = await res.json();
 
-      let resultados = [];
-      $('table tbody tr').each((i, el) => {
-        const cols = $(el).find('td');
-        resultados.push(`👤 *${$(cols[0]).text()}*\n🪪 DNI: ${$(cols[1]).text()}`);
-      });
-
-      if (resultados.length === 0) {
-        return m.reply('❌ No se encontraron resultados con ese nombre.');
-      }
-
-      await m.reply(`📄 *Resultados encontrados:*\n\n${resultados.slice(0, 10).join('\n\n')}`);
-    } catch (e) {
-      console.error(e);
-      m.reply('❌ Error al hacer scraping.');
+    if (!data || Object.keys(data).length === 0) {
+      return conn.reply(m.chat, '❌ No se encontraron resultados.', m);
     }
+
+    // Construimos el mensaje con los campos reales
+    let text = ` *Resultado encontrado*\n\n`;
+    text += ` *Nombre completo:* ${data.full_name || 'N/A'}\n`;
+    text += ` *Nombres:* ${data.first_name || 'N/A'}\n`;
+    text += ` *Apellidos:* ${data.first_last_name || ''} ${data.second_last_name || ''}\n`;
+    text += ` *DNI:* ${data.document_number || 'N/A'}\n`;
+
+    await conn.reply(m.chat, text.trim(), m);
+
+  } catch (e) {
+    console.error(e);
+    conn.reply(m.chat, '⚠️ Error al consultar la API.', m);
   }
 };
 
-handler.command = ['dnip'];
-handler.help = ['dnip <DNI | Nombre Apellido>'];
-handler.tags = ['consulta'];
+handler.help = ['dni <DNI|nombre>'];
+handler.tags = ['tools'];
+handler.command = /^dni$/i;
 
 export default handler;

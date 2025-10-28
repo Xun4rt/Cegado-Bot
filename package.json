@@ -9,7 +9,7 @@
   "dependencies": {
     "@bochilteam/scraper": "^5.0.1",
     "@vitalets/google-translate-api": "^9.2.1",
-    "@whiskeysockets/baileys": "github:nstar-y/bail",
+    "@whiskeysockets/baileys": "^7.0.0-rc.6",
     "acrcloud": "^1.4.0",
     "api-dylux": "^1.8.3",
     "axios": "^1.12.2",
