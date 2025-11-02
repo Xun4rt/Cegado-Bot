@@ -2,7 +2,7 @@ import axios from "axios"
 
 let handler = async (m, { conn, args }) => {
   if (args.length < 2) {
-    return m.reply("⚠️ Usa el comando así:\n.sisargen <DNI> <M/F>\n\nEjemplo: .sisargen 21888765 M")
+    return m.reply("⚠️ Usa el comando así:\n.dniA <DNI> <M/F>\n\nEjemplo: .sisargen 21888765 M")
   }
 
   let dni = args[0]
