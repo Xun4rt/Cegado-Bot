@@ -1,1 +1,1 @@
-# Cegado-Bot
+Este bot está concentrado en muchas cosas así que no tiene una especialidad por defecto pero se podría decir que va mejorando con el paso del tiempo y será top.
